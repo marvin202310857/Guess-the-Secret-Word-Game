@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Word Guessing Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+            background-color: #f0f0f0;
+        }
+        #game-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background: white;
+            padding: 1rem 2rem 2rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        #message {
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Word Guessing Game</h1>
+        <p>Guess the secret word!</p>
+        <input type="text" id="guess-input" placeholder="Enter your guess" />
+        <button id="submit-btn">Submit</button>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
